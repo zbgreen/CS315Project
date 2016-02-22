@@ -1,0 +1,36 @@
+/*
+Zachary Green and Brendan Andres
+CS 315 Project
+*/
+
+body {
+    font-family: "Droid Sans", sans-serif;
+}
+
+.navigation {
+    text-decoration: none;
+}
+
+.navigation ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333333;
+}
+
+.navigation li {
+    float: left;
+}
+
+.navigation li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.navigation li a:hover {
+    background-color: #111111;
+}

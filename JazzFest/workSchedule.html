@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Work Schedule</title>
+</head>
+<body>
+<h1>Jazz Fest Worker Schedule</h1>
+<div class="navigation">
+    <ul>
+        <li id="home"><a href="../home.html">Home</a></li>
+        <li id="signUpLink"><a href="signUp.html">Sign Up</a></li>
+        <li id="currentGuest"><a href="currentGuest.html">Guest Artist</a> </li>
+        <li id="bandSched"><a href="schedule.html">Band Schedule</a></li>
+        <li id="workSched"><a href="workSchedule.html">Work Schedule</a></li>
+        <li id="previousFest"><a href="previousFestivals.html">Previous Festivals</a></li>
+    </ul>
+</div>
+<!---Use jQuery ClockPicker to make entering the time seem more modern? I think we can use jQuery in later stages. -->
+<form action="workSchedule.html">
+Worker: <input type="text" name="worker"><br>
+Job: <input type="text" name="job"><br>
+Start: <input type="text" name="time-start"><br> <!--Later stages this will be PHP accessing Clockpicker through an AJAX call-->
+End: <input type="text" name="time-end"><br> <!-- Same as above -->
+<input type="submit" value="Submit">
+</form>
+</span>
+</body>
+</html>

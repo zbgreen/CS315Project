@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>SignUp</title>
+</head>
+<body>
+<h1>Jazz Fest Online Application</h1>
+<div class="navigation">
+    <ul>
+        <li id="home"><a href="../home.html">Home</a></li>
+        <li id="signUpLink"><a href="signUp.html">Sign Up</a></li>
+        <li id="currentGuest"><a href="currentGuest.html">Guest Artist</a> </li>
+        <li id="bandSched"><a href="schedule.html">Band Schedule</a></li>
+        <li id="workSched"><a href="workSchedule.html">Work Schedule</a></li>
+        <li id="previousFest"><a href="previousFestivals.html">Previous Festivals</a></li>
+    </ul>
+</div>
+<h3>SCHOOL AND DIRECTOR INFORMATION</h3>
+<div>
+<table>
+	<tr>
+		<td>
+			<label for="school_name">School name:&nbsp;</label>
+		</td>
+		<td>
+			<input id="school_name" name="school_name" type="text" />
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<label for="school_enrollment">School enrollment:&nbsp;</label>
+		</td>
+		<td>
+			<input id="school_enrollment" name="school_enrollment" type="text" />
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<label for="distance">Distance from Kirksville:&nbsp;</label>
+		</td>
+		<td>
+			<input id="distance" name="distance" type="text" />
+		</td>
+	</tr>
+</table>
+</div>
+<div>
+<table>
+	<tr>
+		<td>
+			<label for="director_name">Name of director(s):&nbsp;</label>
+		</td>
+		<td>
+			<input id="director_name_" name="director_name_" type="text" size="30"/>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<label for="address">Contact address:&nbsp;</label>
+		</td>
+		<td>
+			<textarea id="address" cols="50" name="address" style="width: 224px; height: 89px; resize: none;" >
+			</textarea>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<label for="phone">Phone:&nbsp;</label>
+		</td>
+		<td>
+			<input id="phone" name="phone" type="text" />
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<label for="fax">Fax:&nbsp;</label>
+		</td>
+		<td>
+			<input id="fax" name="fax" type="text" />
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<label for="email">E-mail:&nbsp;</label>
+		</td>
+		<td>
+			<input id="email" name="email" type="email" />
+		</td>
+	</tr>
+	<tr>
+		<td colspan="2">
+			<input id="email_me" name="email_me" type="checkbox" value="email_me" />
+			<label for="email_me">&nbsp;Please check this box if you are able to receive festival information, including schedule of bands and other details, at this email address</label>
+		</td>
+	</tr>
+</table>
+</div>
+<h3>ENSEMBLE INFORMATION</h3>
+<div>
+<table>
+	<tr>
+		<td>
+			<label for="ensemble_1">Ensemble(1) Name:&nbsp;</label>
+		</td>
+		<td>
+			<input id="ensemble_1" name="ensemble_1" type="text" />
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<label for="ensemble_2">Ensemble(2) Name:&nbsp;</label>
+		</td>
+		<td>
+			<input id="ensemble_2" name="ensemble_2" type="text" />
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<label for="ensemble_3">Ensemble(3) Name:&nbsp;</label>
+		</td>
+		<td>
+			<input id="ensemble_3" name="ensemble_3" type="text" />
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<label for="ensemble_4">Ensemble(4) Name:&nbsp;</label>
+		</td>
+		<td>
+			<input id="ensemble_4" name="ensemble_4" type="text" />
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<label for="ensemble_5">Ensemble(5) Name:&nbsp;</label>
+		</td>
+		<td>
+			<input id="ensemble_5" name="ensemble_5" type="text" />
+		</td>
+	</tr>
+<p>    <!-- Begin combos --></p>
+	<tr>
+		<td>
+			<label for="combo_1">Combo(1) Name:&nbsp;</label>
+		</td>
+		<td>
+			<input id="combo_1" name="combo_1" type="text" />
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<label for="combo_2">Combo(2) Name:&nbsp;</label>
+		</td>
+		<td>
+			<input id="combo_2" name="combo_2" type="text" />
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<label for="combo_3">Combo(3) Name:&nbsp;</label>
+		</td>
+		<td>
+			<input id="combo_3" name="combo_3" type="text" />
+		</td>
+	</tr>
+	<tr id="table_combo_4" style="display: none;">
+		<td>
+			<label for="combo_4">Combo(4) Name:&nbsp;</label>
+		</td>
+		<td>
+			<input id="combo_4" name="combo_4" type="text" />
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<label for="combo_5">Combo(5) Name:&nbsp;</label>
+		</td>
+		<td>
+			<input id="combo_5" name="combo_5" type="text" />
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<input type="submit" value="Submit">
+			<input type="clear" value="Clear"> <!--Use CSS to clear with this-->
+		</td>
+	</tr>
+</table>
+</div>
+</body>
+</html>
