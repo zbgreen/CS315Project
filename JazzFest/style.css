@@ -7,6 +7,19 @@ body {
     font-family: "Droid Sans", sans-serif;
 }
 
+.container {
+    position: relative;
+    padding: 0 0 0 105px;
+}
+
+#sidebar {
+    position:absolute;
+    top:0; bottom:0; left: 0;
+    padding-left: 5px;
+    width: 100px;
+    background: dimgray;
+}
+
 .navigation {
     text-decoration: none;
 }
@@ -33,4 +46,25 @@ body {
 
 .navigation li a:hover {
     background-color: #111111;
+}
+
+#homeText {
+    margin-left: 5px;
+}
+
+#ronMiles img {
+    max-height: 25%;
+    max-width: 25%;
+}
+
+.googleSchedules {
+    height: 500px;
+    width: 850px;
+    margin-bottom: 5px;
+}
+
+.homerooms {
+    height: 600px;
+    width: 700px;
+    margin-bottom: 5px;
 }
