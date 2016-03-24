@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h3>Milestone 2: PHP</h3>
+<h5>
+    Sign Up form processing.
+</h5>
+<p>
+    Form processing functionality was added to the Sign Up page. Band directors can now enter in their information
+    to sign up for the festival. Since there isn't a database yet the current implementation prints the fields that
+    they entered in and sends an email confirmation if they checked the box allowing that. The script also will
+    return an error message if required fields are blank or no bands are signed up. The entered information is
+    screened for html special characters before printed to the screen. Future changes will have a table showing which
+    bands have signed up so far instead of the Google Sheets showing the previous festivals bands.
+    <a href="sand.truman.edu/~zbg2666/JazzFest/signUp.html">Sign Up html</a>
+    <a href="sand.truman.edu/~zbg2666/JazzFest/signUp.phps">Sign Up phps</a>
+</p>
+<h5>Admin Page</h5>
+<p>
+    This page was added so that the site administrator can communicate with the band directors. The admin can login
+    using PHP validation and send emails to all directors easily. Since we don't have a database we're using username
+    and password being stored in the PHP code for now and a dummy list of band directors in the code. Future changes
+    will migrate all of the data to mysql for more secure authentication.
+    <a href="sand.truman.edu/~zbg2666/JazzFest/admin.html">Admin Page</a>
+    <a href="sand.truman.edu/~zbg2666/JazzFest/admin.phps">Admin phps</a>
+</p>
+</body>
+</html>
