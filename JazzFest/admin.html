@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Admin Home</title>
+</head>
+<body>
+<div class="navigation">
+    <ul>
+        <li id="home"><a href="../home.html">Home</a></li>
+        <li id="signUpLink"><a href="signUp.html">Sign Up</a></li>
+        <li id="currentGuest"><a href="currentGuest.html">Guest Artist</a> </li>
+        <li id="bandSched"><a href="schedule.html">Band Schedule</a></li>
+        <li id="workSched"><a href="workSchedule.html">Work Schedule</a></li>
+        <li id="previousFest"><a href="previousFestivals.html">Previous Festivals</a></li>
+    </ul>
+</div>
+
+<h1>Director List</h1>
+<form action="admin.php" method="post">
+    <!--- This is just a representation of what the table will look like
+     when populated by the database that we will get later--->
+    <table>
+        <tr>
+            <th>School</th>
+            <th>Number of Ensembles</th>
+            <th>Director</th>
+            <th>Email</th>
+        </tr>
+        <tr>
+            <td id="school" name="school">
+                Smithville
+            </td>
+            <td id="ensembles" name="ensembles">
+                3
+            </td>
+            <td id="director" name="director">
+                Zachary "Magic Hands" Green
+            </td>
+            <td id="email" name="email">
+                zbg2666@truman.edu
+            </td>
+        </tr>
+        <tr>
+            <td id="school1" name="school">
+                Smothvoth
+            </td>
+            <td id="ensembles1" name="ensembles">
+                1
+            </td>
+            <td id="director1" name="director">
+                Acharzay Eengray
+            </td>
+            <td id="email1" name="email">
+                zbgreen7@gmail.com
+            </td>
+        </tr>
+        <tr>
+            <td id="school2" name="school">
+                Fort Zumwalt South
+            </td>
+            <td id="ensembles2" name="ensembles">
+                2
+            </td>
+            <td id="director2" name="director">
+                Brendan Andres
+            </td>
+            <td id="email2" name="email">
+                bsa6811@truman.edu
+            </td>
+        </tr>
+        <tr>
+            <td id="school3" name="school">
+                Fart Zumbabwe Highway
+            </td>
+            <td id="ensembles3" name="ensembles">
+                5
+            </td>
+            <td id="director3" name="director">
+                Nadnerb Serdna
+            </td>
+            <td id="email3" name="email">
+                bandres012@gmail.com
+            </td>
+        </tr>
+        <tr>
+            <td id="school4" name="school">
+                Fake Fake Fake
+            </td>
+            <td id="ensembles4" name="ensembles">
+                3
+            </td>
+            <td id="director4" name="director">
+                Guy Fawkes
+            </td>
+            <td id="email4" name="email">
+                csweb08@truman.edu
+            </td>
+        </tr>
+        <tr>
+            <input type="submit" value="Submit">
+        </tr>
+    </table>
+</form>
+</body>
+</html>
