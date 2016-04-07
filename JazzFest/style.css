@@ -69,10 +69,17 @@ body {
     margin-bottom: 5px;
 }
 
+#guestTxt {
+    position: absolute;
+    top: 120px;
+    right: 0px;
+    width: 900px;
+}
+
 /*flexslider css*/
 .flex-caption {
     width: 96%;
-    padding: 2%;
+    padding: 5% 2% 2%;
     left: 0;
     bottom: 0;
     background: rgba(0,0,0,.5);
