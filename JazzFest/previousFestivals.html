@@ -3,6 +3,17 @@
 <head>
     <meta charset="utf-8">
     <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="flexslider.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <script src="jquery.flexslider.js"></script>
+    <script src="prevGuestArtists.js"></script>
+
+    <!--<script type="text/javascript" charset="utf-8">-->
+        <!--$(window).load(function() {-->
+            <!--$('.flexslider').flexslider();-->
+        <!--});-->
+    <!--</script>-->
 </head>
 <body>
 <div class="navigation">
@@ -18,56 +29,189 @@
 
 <h1>Past Guest Artists</h1>
 
-<!--TODO Add Previous Posters by using Lightboxes-->
-<p>
-    Past Guest Artists
-    1969 – Local Artists <br>
-    1970 – Local Artists <br>
-    1971 – Clark Terry, trumpet <br>
-    1972 – Clark Terry, trumpet <br>
-    1973 – Arnie Lawrence, alto sax <br>
-    1974 – Bill Watrous, trombone <br>
-    1975 – Gary Burton, vibes <br>
-    1976 – Marty Stamm, trumpet <br>
-    1977 – Eddie Daniels, woodwinds <br>
-    1978 – Carl Fontana, trombone <br>
-    1979 – Arnie Lawrence, alto sax <br>
-    1980 – Mike Metheny, flugelhorn <br>
-    1981 – Steve Stewart, trombone <br>
-    1982 – Arch Martin, trombone <br>
-    1983 – Les DeMerle, percussionist <br>
-    1984 – Mike Metheny, flugelhorn <br>
-    1985 – Willie Thomas, trumpeter <br>
-    1986 – Tamara Schultz, alto sax <br>
-    1987 – Carl Fontana, trombone <br>
-    1988 – Pete Christlieb, tenor sax <br>
-    1989 – Mike Metheny, flugelhorn <br>
-    1990 – Nick Brignola, bari sax <br>
-    1991 – Ryan Kisor, trumpet <br>
-    1992 – John Fedchock, trombone <br>
-    1993 – Danilo Perez, piano <br>
-    1994 – Ted Nash, tenor sax <br>
-    1995 – Tim Hagans, trumpet <br>
-    1996 – Clay Jenkins, trumpet; Kim Richmond, alto sax <br>
-    1997 – Jon Faddis, trumpet <br>
-    1998 – Slide Hampton, trombone <br>
-    1999 – Ernie Watts, tenor sax <br>
-    2000 – Peter Erskine, drums <br>
-    2001 – Bobby Watson, alto sax <br>
-    2002 – Wycliffe Gordon, trombone <br>
-    2003 – Randy Brecker, trumpet <br>
-    2004 – John Abercrombie, guitar <br>
-    2005 – Matt Wilson Arts & Crafts Quartet <br>
-    2006 – Dick Oatts, alto sax; Mike Kocour, piano <br>
-    2007 – Joey Sellers, trombone <br>
-    2008 – Ingrid Jensen, trumpet <br>
-    2009 – Ben Allison, bass <br>
-    2010 – Donny McCaslin, tenor sax <br>
-    2011 – Conrad Herwig, trombone <br>
-    2012 – John McNeil, trumpet <br>
-    2013 – Ehthan Iverson, piano <br>
-    2014 – Sam Newsome, soprano sax <br>
-    2015 – Ray Anderson, trombone <br>
-</p>
+<div class="flexslider" >
+    <ul class="slides">
+        <li>
+            <img src="images/terry.jpg">
+            <p class="flex-caption">1971-72 - Clark Terry, trumpet</p>
+        </li>
+        <li>
+            <img src="images/lawrence.jpg">
+            <p class="flex-caption">1973 - Arnie Lawrence</p>
+        </li>
+        <li>
+            <img src="images/watrous.jpg">
+            <p class="flex-caption">1974 – Bill Watrous, trombone</p>
+        </li>
+        <li>
+            <img src="images/burton.jpg">
+            <p class="flex-caption">1975 – Gary Burton, vibes</p>
+        </li>
+        <li>
+            <img src="images/daniels.jpg">
+            <p class="flex-caption">1977 – Eddie Daniels, woodwinds</p>
+        </li>
+        <li>
+            <img src="images/fontana.jpg">
+            <p class="flex-caption">1978 – Carl Fontana, trombone </p>
+        </li>
+        <li>
+            <img src="images/lawrence.jpg">
+            <p class="flex-caption">1979 – Arnie Lawrence, alto sax</p>
+        </li>
+        <li>
+            <img src="images/metheny.jpg">
+            <p class="flex-caption">1980 – Mike Metheny, flugelhorn</p>
+        </li>
+        <li>
+            <img src="images/stewart.jpg">
+            <p class="flex-caption">1981 – Steve Stewart, trombone</p>
+        </li>
+        <li>
+            <img src="images/martin.jpg">
+            <p class="flex-caption">1982 – Arch Martin, trombone</p>
+        </li>
+        <li>
+            <img src="images/demerle.png">
+            <p class="flex-caption">1983 – Les DeMerle, percussionist</p>
+        </li>
+        <li>
+            <img src="images/metheny.jpg">
+            <p class="flex-caption">1984 – Mike Metheny, flugelhorn</p>
+        </li>
+        <li>
+            <img src="images/thomas.jpg">
+            <p class="flex-caption">1985 – Willie Thomas, trumpeter</p>
+        </li>
+        <li>
+            <img src="images/fontana.jpg">
+            <p class="flex-caption">1987 – Carl Fontana, trombone</p>
+        </li>
+        <li>
+            <img src="images/christlieb.jpg">
+            <p class="flex-caption">1988 – Pete Christlieb, tenor sax</p>
+        </li>
+        <li>
+            <img src="images/metheny.jpg">
+            <p class="flex-caption">1989 – Mike Metheny, flugelhorn</p>
+        </li>
+        <li>
+            <img src="images/brignola.jpg">
+            <p class="flex-caption">1990 – Nick Brignola, bari sax</p>
+        </li>
+        <li>
+            <img src="images/kisor.jpg">
+            <p class="flex-caption">1991 – Ryan Kisor, trumpet</p>
+        </li>
+        <li>
+            <img src="images/fedchock.jpg">
+            <p class="flex-caption">1992 – John Fedchock, trombone</p>
+        </li>
+        <li>
+            <img src="images/perez.jpg">
+            <p class="flex-caption">1993 – Danilo Perez, piano</p>
+        </li>
+        <li>
+            <img src="images/nash.jpg">
+            <p class="flex-caption">1994 – Ted Nash, tenor sax</p>
+        </li>
+        <li>
+            <img src="images/hagans.jpg">
+            <p class="flex-caption">1995 – Tim Hagans, trumpet</p>
+        </li>
+        <li>
+            <img src="images/jenkins.jpg">
+            <p class="flex-caption">1996 – Clay Jenkins, trumpet; Kim Richmond, alto sax</p>
+        </li>
+        <li>
+            <img src="images/richmond.jpg">
+            <p class="flex-caption">1996 – Clay Jenkins, trumpet; Kim Richmond, alto sax</p>
+        </li>
+        <li>
+            <img src="images/faddis.jpg">
+            <p class="flex-caption">1997 – Jon Faddis, trumpet</p>
+        </li>
+        <li>
+            <img src="images/hampton.JPG">
+            <p class="flex-caption">1998 – Slide Hampton, trombone</p>
+        </li>
+        <li>
+            <img src="images/watts.jpg">
+            <p class="flex-caption">1999 – Ernie Watts, tenor sax</p>
+        </li>
+        <li>
+            <img src="images/erskine.jpg">
+            <p class="flex-caption">2000 – Peter Erskine, drums</p>
+        </li>
+        <li>
+            <img src="images/watson.jpg">
+            <p class="flex-caption">2001 – Bobby Watson, alto sax</p>
+        </li>
+        <li>
+            <img src="images/gordon.jpg">
+            <p class="flex-caption">2002 – Wycliffe Gordon, trombone</p>
+        </li>
+        <li>
+            <img src="images/brecker.jpg">
+            <p class="flex-caption">2003 – Randy Brecker, trumpet</p>
+        </li>
+        <li>
+            <img src="images/abercrombie.jpg">
+            <p class="flex-caption">2004 – John Abercrombie, guitar</p>
+        </li>
+        <li>
+            <img src="images/wilson.jpg">
+            <p class="flex-caption">2005 – Matt Wilson Arts & Crafts Quartet</p>
+        </li>
+        <li>
+            <img src="images/oatts.jpg">
+            <p class="flex-caption">2006 – Dick Oatts, alto sax; Mike Kocour, piano</p>
+        </li>
+        <li>
+            <img src="images/kocour.jpg">
+            <p class="flex-caption">2006 – Dick Oatts, alto sax; Mike Kocour, piano</p>
+        </li>
+        <li>
+            <img src="images/sellers.png">
+            <p class="flex-caption">2007 – Joey Sellers, trombone</p>
+        </li>
+        <li>
+            <img src="images/jenson.jpg">
+            <p class="flex-caption">2008 – Ingrid Jensen, trumpet</p>
+        </li>
+        <li>
+            <img src="images/allison.jpg">
+            <p class="flex-caption">2009 – Ben Allison, bass</p>
+        </li>
+        <li>
+            <img src="images/mccaslin.jpg">
+            <p class="flex-caption">2010 – Donny McCaslin, tenor sax</p>
+        </li>
+        <li>
+            <img src="images/Herwig.jpg">
+            <p class="flex-caption">2011 – Conrad Herwig, trombone</p>
+        </li>
+        <li>
+            <img src="images/mcneil.jpeg">
+            <p class="flex-caption">2012 – John McNeil, trumpet</p>
+        </li>
+        <li>
+            <img src="images/iverson.jpeg">
+            <p class="flex-caption">2013 – Ehthan Iverson, piano</p>
+        </li>
+        <li>
+            <img src="images/newsome.jpeg">
+            <p class="flex-caption">2014 – Sam Newsome, soprano sax</p>
+        </li>
+        <li>
+            <img src="images/anderson.jpg">
+            <p class="flex-caption">2015 – Ray Anderson, trombone</p>
+        </li>
+        <li>
+            <img src="images/miles.jpg">
+            <p class="flex-caption">2016 - Ron Miles</p>
+        </li>
+    </ul>
+</div>
 </body>
 </html>
