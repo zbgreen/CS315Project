@@ -5,27 +5,42 @@
  * Date: 3/23/2016
  */
 
-sendEmails();
+process();
 
-function sendEmails($directors) {
-    $directors = [
-        'zbg2666@truman.edu',
-        'zbgreen7@gmail.com',
-        'bsa6811@truman.edu',
-        'bandres012@gmail.com',
-        'csweb08@truman.edu'
-    ];
-
-    $subject = "Jazz Festival Update";
-    echo "<p>Email Status: </p>";
-
-    $message = "You're getting this email to update you on the date and schedule of Jazz Festival.";
-    foreach ($directors as $value) {
-        if(mail($value, $subject, $message)) {
-            echo "<p>Email to $value was sent</p>";
-        } else {
-            echo "<p>Email to $value was not sent</p>";
-        }
+//function to call correct feature.
+function process() {
+    if (!empty($_POST['subject'])) {
+        sendEmails();
     }
+}
 
+//sends emails to all directors' emails from BandList table
+function sendEmails() {
+    $host = "mysql.truman.edu";
+    $dbname = "zbg2666CS315";
+    $username = "zbg2666";
+    $password = "theefato";
+
+    try {
+        $db = new PDO("mysql:host=$host;dbname=$dbname", $username, $password);
+
+        $stmt = $db->query("
+            SELECT Email
+            FROM BandList");
+        $stmt->setFetchMode(PDO::FETCH_ASSOC);
+
+        while ($row = $stmt->fetch()) {
+            $address = $row['Email'];
+            $success = mail($address, $_POST['subject'], $_POST['message']);
+
+            if ($success) {
+                echo "<p>Message to $address was successful</p>";
+            } else {
+                echo "<p>Message to $address was unsuccessful</p>";
+            }
+        }
+    } catch (PDOException $e) {
+        $e->getMessage();
+    }
+    $db = null;
 }
