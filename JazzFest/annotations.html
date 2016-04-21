@@ -35,17 +35,46 @@
 <p>
     A slide show was added to the previous festivals page. There are now photos for all of the previous guest artists
     arranged into a nice dynamics slide show. The js library used in flexslider which also utilizes jquery.
-    <a href="http://sand.truman.edu/~zbg2666/JazzFest/previousFestivals.html"></a>
+    <a href="http://sand.truman.edu/~zbg2666/JazzFest/previousFestivals.html">Previous Festivals</a><br><br>
 
     A music player has been added to the home page. This player is provided by audio.js. The song played is
     the Chapter Hymn for Upsilon Phi of Phi Mu Alpha.
-    <a href="http://sand.truman.edu/~zbg2666/home.html"></a>
+    <a href="http://sand.truman.edu/~zbg2666/home.html">Home</a><br><br>
 
     Calendar functionality has been added for scheduling for the band and worker pages. It uses the dhtmlx scheduler
     which uses js and ajax. Though most of the work is already done a lot of code modification is required in order to
     work as desired.
-    <a href="http://sand.truman.edu/~zbg2666/JazzFest/schedule.html"></a>
-    <a href="http://sand.truman.edu/~zbg2666/JazzFest/workSchedule.html"></a>
+    <a href="http://sand.truman.edu/~zbg2666/JazzFest/schedule.html">Schedule</a>
+</p>
+
+<h5>Milestone 4: Databases</h5>
+<p>
+    BandList table: <br>
+    SchoolName varchar <br>
+    SchoolEnrollment int <br>
+    Distance int <br>
+    Director varchar <br>
+    Address varchar <br>
+    phone int <br>
+    email varchar <br>
+    band varchar <br><br>
+
+    Band Sign up is now connected to the BandList table. When a band signs up it is inserted into the table and can
+    be accessed on a provided link to view the current table in html table form. Use of the PDO prepared statements
+    prevents SQL injection and was tested using DELETE injections. The bandList.php and signUp.php files had the
+    htmlspecialchars() function added to prevent injections from text output onto the page.
+    <a href="http://sand.truman.edu/~zbg2666/JazzFest/signUp.html">Sign Up</a>
+    <a href="http://sand.truman.edu/~zbg2666/JazzFest/bandList.php">Band List</a>
+    <a href="http://sand.truman.edu/~zbg2666/JazzFest/bandList.phps">Band List phps</a><br><br>
+
+    The admin page now has a true group email feature. The admin can enter in a subject and message that will be
+    sent to all director emails in the BandList table. It is password protected to prevent spam and evil usage.
+    PDO prepared statements are used again to prevent SQL injection during the query.
+    <a href="http://sand.truman.edu/~zbg2666/JazzFest/admin.html">Admin</a>
+    <a href="http://sand.truman.edu/~zbg2666/JazzFest/admin.phps">Admin phps</a><br><br>
+
+    The only other area for user input is the JS calendar. It is not connected to the database and it prevents
+    html injection on its own.
 </p>
 </body>
 </html>

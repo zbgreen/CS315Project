@@ -9,7 +9,7 @@ process();
 
 //function to call correct feature.
 function process() {
-    if (!empty($_POST['subject'])) {
+    if (!empty($_POST['subject']) && $_POST['password'] === "oasaaslls") {
         sendEmails();
     }
 }
@@ -21,6 +21,9 @@ function sendEmails() {
     $username = "zbg2666";
     $password = "theefato";
 
+    $subject = htmlspecialchars($_POST['subject']);
+    $message = htmlspecialchars($_POST['message']);
+
     try {
         $db = new PDO("mysql:host=$host;dbname=$dbname", $username, $password);
 
@@ -31,7 +34,7 @@ function sendEmails() {
 
         while ($row = $stmt->fetch()) {
             $address = $row['Email'];
-            $success = mail($address, $_POST['subject'], $_POST['message']);
+            $success = mail($address, $subject, $message);
 
             if ($success) {
                 echo "<p>Message to $address was successful</p>";

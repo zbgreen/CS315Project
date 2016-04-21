@@ -54,14 +54,14 @@ function fetchBands() {
 END;
 
         while ($row = $stmt->fetch()) {
-            $school = $row['SchoolName'];
-            $enrollment = $row['SchoolEnrollment'];
-            $distance = $row['Distance'];
-            $director = $row['Director'];
-            $address = $row['Address'];
-            $phone = $row['Phone'];
-            $email = $row['Email'];
-            $band = $row['Band'];
+            $school = htmlspecialchars($row['SchoolName']);
+            $enrollment = htmlspecialchars($row['SchoolEnrollment']);
+            $distance = htmlspecialchars($row['Distance']);
+            $director = htmlspecialchars($row['Director']);
+            $address = htmlspecialchars($row['Address']);
+            $phone = htmlspecialchars($row['Phone']);
+            $email = htmlspecialchars($row['Email']);
+            $band = htmlspecialchars($row['Band']);
 
             echo<<<END
             <tr>
