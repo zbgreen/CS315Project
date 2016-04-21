@@ -19,12 +19,14 @@
 
 <h1>Jazz Fest Worker Schedule</h1>
 
+<a href="viewWorkSchedule.php">View Work Schedule</a><br><br>
+
 <!---Use jQuery ClockPicker to make entering the time seem more modern? I think we can use jQuery in later stages. -->
-<form action="workSchedule.html">
+<form action="workSchedule.php" method="post">
 Worker: <input type="text" name="worker" required><br>
 Job: <input type="text" name="job" required><br>
-Start: <input type="text" name="time-start" required><br> <!--Later stages this will be PHP accessing Clockpicker through an AJAX call-->
-End: <input type="text" name="time-end" required><br> <!-- Same as above -->
+Start: <input type="text" name="time-start" required>Example 900 = 9:00am<br> <!--Later stages this will be PHP accessing Clockpicker through an AJAX call-->
+End: <input type="text" name="time-end" required>Example 1300 = 1:00pm<br> <!-- Same as above -->
 <input type="submit" value="Submit">
 </form>
 </span>

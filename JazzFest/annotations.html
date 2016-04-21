@@ -59,6 +59,12 @@
     email varchar <br>
     band varchar <br><br>
 
+    WorkSchedule table: <br>
+    WorkerName varchar <br>
+    Job varchar <br>
+    StartTime <br>
+    End Time <br><br>
+
     Band Sign up is now connected to the BandList table. When a band signs up it is inserted into the table and can
     be accessed on a provided link to view the current table in html table form. Use of the PDO prepared statements
     prevents SQL injection and was tested using DELETE injections. The bandList.php and signUp.php files had the
@@ -72,6 +78,14 @@
     PDO prepared statements are used again to prevent SQL injection during the query.
     <a href="http://sand.truman.edu/~zbg2666/JazzFest/admin.html">Admin</a>
     <a href="http://sand.truman.edu/~zbg2666/JazzFest/admin.phps">Admin phps</a><br><br>
+
+    The work schedule page now works as intended. The user can enter their name, job, start and end time to be entered
+    into the WorkSchedule table. Due to time constraints the user must enter the time in military time for correct
+    sorting. The table display is sorted by start time. The insert uses PDO prepared statements to prevent SQL injection
+    and htmlspecialchars() to prevent injection.
+    <a href="http://sand.truman.edu/~zbg2666/JazzFest/workSchedule.html">Work Schedule html</a>
+    <a href="http://sand.truman.edu/~zbg2666/JazzFest/workSchedule.phps">Work Schedule phps</a>
+    <a href="http://sand.truman.edu/~zbg2666/JazzFest/workSchedule.phps">View Work Schedule phps</a><br><br>
 
     The only other area for user input is the JS calendar. It is not connected to the database and it prevents
     html injection on its own.
